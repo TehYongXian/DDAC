@@ -15,7 +15,7 @@
           }
         }
       },
-      "AWSSDK.Core/3.7.202.6": {
+      "AWSSDK.Core/3.7.202.17": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
@@ -44,10 +44,10 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.201.11": {
+      "AWSSDK.S3/3.7.205.3": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.200.13, 4.0.0)"
+          "AWSSDK.Core": "[3.7.202.17, 4.0.0)"
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.S3.dll": {
@@ -4189,15 +4189,15 @@
         "lib/netstandard2.0/Amazon.Lambda.SQSEvents.xml"
       ]
     },
-    "AWSSDK.Core/3.7.202.6": {
-      "sha512": "wAVTXROEKHnFXAeAv0cXIth/6x6rmHeQOWW5yiI99DndE1AEw7/Qovlb0npQy7gs7s4xgbAsImL/6QYwpFQ+Bw==",
+    "AWSSDK.Core/3.7.202.17": {
+      "sha512": "fv87rDpHNYfJP1ePxdhewreJug2xnKGWdCGSKkuL/XBSVRfmpDOTFfJP7lztPT09zxexiGfK/yz60P6prKBijQ==",
       "type": "package",
-      "path": "awssdk.core/3.7.202.6",
+      "path": "awssdk.core/3.7.202.17",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.202.6.nupkg.sha512",
+        "awssdk.core.3.7.202.17.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
@@ -4244,17 +4244,17 @@
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.S3/3.7.201.11": {
-      "sha512": "V4op6OTIIwKuv8yXrp4H9iPk/zszLVOYnYz3eW5vdJqgF6pxxWP4Rg9Ed/tRINZIn8DAX6kCpNFdhDZRTW1Srg==",
+    "AWSSDK.S3/3.7.205.3": {
+      "sha512": "7bSjjNJgPsPPPdWL3ynBb938nEU3MPcEMforfE0xvM4asK3oyt4aL1m+WWG5b6l2OKvFcyyNh9z6YiaMPcp//g==",
       "type": "package",
-      "path": "awssdk.s3/3.7.201.11",
+      "path": "awssdk.s3/3.7.205.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
         "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.s3.3.7.201.11.nupkg.sha512",
+        "awssdk.s3.3.7.205.3.nupkg.sha512",
         "awssdk.s3.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.S3.dll",
@@ -12082,7 +12082,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "AWSSDK.DynamoDBv2 >= 3.7.201.8",
-      "AWSSDK.S3 >= 3.7.201.11",
+      "AWSSDK.S3 >= 3.7.205.3",
       "AWSSDK.SQS >= 3.7.200.28",
       "AWSSDK.SimpleNotificationService >= 3.7.200.27",
       "AWSSDK.XRay >= 3.7.200.37",
@@ -12103,11 +12103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
       "projectName": "mvcflowershoplab1",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+      "projectPath": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12143,7 +12143,7 @@
           },
           "AWSSDK.S3": {
             "target": "Package",
-            "version": "[3.7.201.11, )"
+            "version": "[3.7.205.3, )"
           },
           "AWSSDK.SQS": {
             "target": "Package",

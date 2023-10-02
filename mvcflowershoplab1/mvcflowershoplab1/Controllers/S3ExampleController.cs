@@ -14,7 +14,7 @@ namespace mvcflowershoplab1.Controllers
     public class S3ExampleController : Controller
     {
         //define bucket name for the code to use
-        private const string bucketname = "mvcflowershoplab1";
+        private const string bucketname = "bicyclerental";
 
         //collect back the keys from the appsettings.json
         private List<string> getKeys()
@@ -84,7 +84,7 @@ namespace mvcflowershoplab1.Controllers
             }
 
             //3.4 return back to the display image gallery page to view the new images
-            return RedirectToAction("Index", "S3Example");
+            return RedirectToAction("DisplayImage", "S3Example");
         }
 
         //function4: view image from s3 bucket
