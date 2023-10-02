@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\Repos\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\Repos\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\Repos\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
         "projectName": "mvcflowershoplab1",
-        "projectPath": "C:\\Users\\User\\source\\Repos\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\Repos\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
