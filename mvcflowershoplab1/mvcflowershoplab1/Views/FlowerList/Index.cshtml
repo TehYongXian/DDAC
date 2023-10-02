@@ -1,0 +1,41 @@
+﻿@model List<Flower>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<center>
+    <h1>May Shop Flower List</h1>
+    <br /><hr /><br />
+    <a asp-action="AddNewFlower" asp-controller="FlowerList">Add New Flower Information</a>
+    <br />
+    <br />
+    <table border="1">
+        <tr>
+            <th>Flower ID</th>
+            <th>Flower Name</th>
+            <th>Flower Type</th>
+            <th>Flower Date</th>
+            <th>FlowerPrice</th>
+        </tr>
+        @foreach (var singleflower in Model)
+        {
+            <tr>
+                <td>@singleflower.FlowerID</td>
+                <td>@singleflower.FlowerName</td>
+                <td>@singleflower.FlowerType</td>
+                <td>@singleflower.FlowerProducedDate</td>
+                <td>@singleflower.FlowerPrice</td>
+                <td>
+                    <a asp-action="deletePage" asp-controller="FlowerList" asp-route-did="@singleflower.FlowerID">
+                        <button class="btn-info" style="background-color:red">Delete</button>
+                    </a>
+                </td>
+                <td>
+                    <a asp-action="editPage" asp-controller="FlowerList" asp-route-did="@singleflower.FlowerID">
+                        <button class="btn-info" style="background-color:limegreen">Edit</button>
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
+</center>

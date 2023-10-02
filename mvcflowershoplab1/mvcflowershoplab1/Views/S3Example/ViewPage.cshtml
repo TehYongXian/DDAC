@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "ViewPage";
+}
+
+<center>
+    <h1>Single Image View Example</h1>
+    <br /><hr /><br />
+    <form asp-action ="DisplayImage" asp-controller="S3Example"> 
+        <img src="@ViewBag.imagetempurl" width="480" height="400"/>
+        <br /><br />
+        <button type="submit" class="btn-info"> Back to Gallery</button>
+    </form>
+</center>
+

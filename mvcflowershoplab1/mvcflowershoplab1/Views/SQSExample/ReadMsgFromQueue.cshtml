@@ -1,0 +1,34 @@
+﻿@model List<KeyValuePair<ReserveInfo, string>>
+@{
+    ViewData["Title"] = "ReadMsgFromQueue";
+}
+<center>
+    <h1>Admin Control Reservation Page:</h1>
+    <br /><hr /><br />
+    @if(ViewBag.errormessage != null)
+    {
+        <p>@ViewBag.errormessage</p>
+    }
+    else
+    {
+        <table>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Key.ReserveID</td>
+                    <td>@item.Key.CustomerName</td>
+                    <td>@item.Key.ReservePax</td>
+                    <td>@item.Key.ReserveTime</td>
+                    <td>
+                        <form asp-action="deleteMessage" asp-controller="SQSExample" asp-route-deleteid="@item.Value" asp-route-word="accept">
+                            <button type="submit" class="btn-dark">Done</button>
+                            <button type="submit" class="btn-dark" asp-route-word="cancel">Cancel</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+</center>
+
+

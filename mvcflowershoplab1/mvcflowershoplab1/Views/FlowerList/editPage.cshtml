@@ -1,0 +1,41 @@
+﻿@model Flower
+@{
+    ViewData["Title"] = "editPage";
+}
+
+<center>
+    <h1>Edit Page Example: </h1>
+    <br /><hr /><br />
+    <form method="post" asp-action="updatePage" asp-controller="FlowerList">
+        <table border="1">
+            <tr>
+                <th><label asp-for="FlowerID"></label></th>
+                <td><input asp-for="FlowerID" readonly /></td>
+                <td><span asp-validation-for="FlowerID"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="FlowerName"></label></th>
+                <td><input asp-for="FlowerName" /></td>
+                <td><span asp-validation-for="FlowerName"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="FlowerType"></label></th>
+                <td><input asp-for="FlowerType" /></td>
+                <td><span asp-validation-for="FlowerType"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="FlowerProducedDate"></label></th>
+                <td><input asp-for="FlowerProducedDate" /></td>
+                <td><span asp-validation-for="FlowerProducedDate"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="FlowerPrice"></label></th>
+                <td><input asp-for="FlowerPrice" /></td>
+                <td><span asp-validation-for="FlowerPrice"></span></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"><button type="submit" class="btn-info">Update</button></td>
+            </tr>
+        </table>
+    </form>
+</center>

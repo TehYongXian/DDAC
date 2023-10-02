@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "adminbroadcastmsg";
+}
+
+<center>
+    <h1>Admin Broadcast Message Sample Columns</h1>
+    <br /><hr /><br />
+    <form method="post" asp-action="broadcastmsg" asp-controller="SNSExample">
+        <label><b>Email Subject Title: </b></label>
+        <textarea rows="2" cols="100" name="subject" placeholder="=Closed Shop Notice"></textarea>
+        <br /><br />
+        <label><b>Message Body: </b></label>
+        <textarea rows="10" cols="100" name="MsgBody" placeholder="=Closed Shop for tomorrow"></textarea>
+        <br /><br />
+        <button type="submit" class="btn-info">Send Message to All Subscribe Customer!</button>
+    </form>
+</center>
+
+

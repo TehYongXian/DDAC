@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<center>
+    <h1>Upload Flower Picture to S3:</h1>
+    <br /><hr /><br />
+    <form asp-action ="ProcessUploadImage" asp-controller="S3Example" method="post"
+        enctype="multipart/form-data">
+        <label>Choose your image here:</label> 
+        <input type="file" name="imagefile" accept="image/*" multiple/>
+        <br /><br />
+        <button type="submit" class="btn-info">Upload</button>
+    </form>
+</center>
+

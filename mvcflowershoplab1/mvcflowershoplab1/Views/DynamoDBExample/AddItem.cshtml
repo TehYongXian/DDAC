@@ -1,0 +1,36 @@
+﻿@model CustomerPurchase
+@{
+    ViewData["Title"] = "AddItem";
+}
+
+<center>
+    <h1>Customer Purchase Information</h1>
+    <br /><hr /><br />
+    <h2>Add New Item</h2>
+    <form method="post" asp-action="addingitem" asp-controller="DynamoDBExample">
+        <label asp-for="CustomerFullName"></label>
+        <input asp-for="CustomerFullName" required/>
+        <span asp-validation-for="CustomerFullName"></span>
+        <br />
+        <label asp-for="PurchaseAmount"></label>
+        <input asp-for="PurchaseAmount" required />
+        <span asp-validation-for="PurchaseAmount"></span>
+        <br />
+        <label asp-for="paymentstatus"></label>
+        <select asp-for="paymentstatus" required >
+            <option value="true">Done</option>
+            <option value="false">Owe</option>
+        </select>
+        <span asp-validation-for="paymentstatus"></span>
+        <br />
+        <label asp-for="paymentDate"></label>
+        <input asp-for="paymentDate" />
+        <span asp-validation-for="paymentDate"></span>
+        <br />
+        <button type="submit" class="btn-dark">save to database</button>
+    </form>
+</center>
+
+
+
+

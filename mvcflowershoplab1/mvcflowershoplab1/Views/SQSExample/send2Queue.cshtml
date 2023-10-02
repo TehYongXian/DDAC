@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "send2Queue";
+}
+
+<center>
+    <h1>Thank you for your reservation</h1>
+    <p>Our crew will be contacting you as soon as possible</p>
+    <p>If you unable to get any contact from us, kindly call us and provide us your below reserved ID for follow up purposes
+        <br /><b>ReserveID: </b>@ViewBag.reserveID
+    </p>
+    <form asp-action="Index" asp-controller="SQSExample">
+        <button type="submit" class="btn-dark">
+            return to the reserve page
+        </button>
+    </form>
+</center>
+
+

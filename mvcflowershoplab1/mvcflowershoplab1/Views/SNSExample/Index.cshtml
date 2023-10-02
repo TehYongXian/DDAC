@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<center>
+    <h1>Sample of newsletter subscription</h1>
+    <br />
+    <a asp-action="adminbroadcastmsg" asp-controller="SNSExample">
+        Admin Broadcast Message Dashboard
+    </a>
+    <hr /><br />
+    <form method="post" asp-action="processSubscribe"
+        asp-controller="SNSExample">
+        <label>Enter your email address for subscription: </label>
+        <input type="email" name="emailadd" placeholder="aaa@gmail.com" />
+        <br /><br />
+        <button type="submit" class="btn-info">Subscribe Newsletter!</button>
+    </form>
+</center>
+
+

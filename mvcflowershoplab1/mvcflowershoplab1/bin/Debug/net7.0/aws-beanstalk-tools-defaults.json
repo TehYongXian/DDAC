@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net7.0",
+    "self-contained" : true,
+    "application"    : "mvcflowershoplab1",
+    "environment"    : "mvcflowershoplab-tp067331-prod",
+    "enable-xray"    : true,
+    "enhanced-health-type" : "enhanced",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0191f30b9082ad19b\";\"aws:ec2:vpc,Subnets\"=\"subnet-0876722c0c19e0e84\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.5.7 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "mvcflowershoplab-tp067331-prod",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "vockey",
+    "instance-profile"     : "LabInstanceProfile",
+    "service-role"         : "LabRole",
+    "proxy-server"         : "nginx"
+}

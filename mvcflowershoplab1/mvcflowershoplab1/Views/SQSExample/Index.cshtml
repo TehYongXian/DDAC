@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<center>
+    <h1>Table Reservation Page Sample:</h1>
+    <br /><hr />
+    <p>Geust waiting list in the queue: @ViewBag.count</p>
+    <br /><br />
+    <form method="post" asp-action="send2Queue" asp-controller="SQSExample">
+        <label> Enter your name: </label>
+        <input type="text" name="name" placeholder="e.g. Ali bin Ahmad" />
+        <br /><br />
+        <label> Enter your pax: </label>
+        <input type="number" name="pax" placeholder="e.g. 7" />
+        <br /><br />
+        <label> Reserve Time: </label>
+        <input type="time" name="reservetime" required/>
+        <br /><br />
+        <button type="submit" class="btn-dark">Reserve Table</button>
+    </form>
+</center>
+
+

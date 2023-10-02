@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "DisplayImage";
+}
+
+<center>
+    <h1>Display Images from S3 Bucket</h1>
+    <br /><hr /><br />
+    <div>
+        @foreach(var singleimage in Model)
+        {
+            string imageurl = "https://" + singleimage.BucketName + "s3.amazonaws.com/" + singleimage.Key;
+
+            <div style="text-align:center; background-color:purple; width:210px;
+                   height:210px; margin:50px; display:inline-block">
+            <div style="width:150px; height:150px" padding=:"5px";>
+                <img src="@imageurl" width="200" height="200"/>
+                </div>
+               <br /><hr /><br />
+               <form asp-action="DeletePage" asp-controller="S3Example" asp-route-imagekey="@singleimage.Key"
+               asp-route-imagebucket="singleimage.BucketName">
+               <button type="submit" class="btn-info" >Delete</button>
+
+               <button type="submit" class="btn-info" asp-action="DownloadPage" asp-controller="S3Example" 
+               asp-route-imagekey="@singleimage.Key" asp-route-imagebucket="singleimage.BucketName">
+               Download
+               </button>
+
+               <button type="submit" class="btn-info" asp-action="ViewPage" asp-controller="S3Example"
+               asp-route-imagekey="@singleimage.Key" asp-route-imagebucket="singleimage.BucketName">
+               View Single Image
+               </button>
+
+            </form>
+            </div>
+        }
+    </div>
+</center>
+

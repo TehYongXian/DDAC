@@ -1,0 +1,37 @@
+﻿@model List<CustomerPurchase>
+@{
+    ViewData["Title"] = "ViewItem";
+}
+<center>
+    <h1>List Items from DynamoDB: </h1>
+    <br><hr /><br />
+    <p>Number of items found in DynamoDB: @Model.Count</p>
+    <br />
+    <br />
+    @foreach(var item in Model)
+    {
+        <div style="text-align: left; display: inline-block; background-color: lightblue; padding: 8px 8px 8px 8px; margin-bottom: 10px;">
+            <dl> @*dictionarylist*@
+                <dt>Name: </dt>
+                <dd>@item.CustomerFullName</dd>
+                <dt>Transaction ID: </dt>
+                <dd>@item.CustomerTransactionID</dd>
+                <dt>Purchase Amount: </dt>
+                <dd>@item.PurchaseAmount</dd>
+                <dt>Payment Status: </dt>
+                <dd>@item.paymentstatus</dd>
+                @if (item.paymentDate.ToString() != "1/1/0001 00:00:00")
+                {
+                    <dt>Payment Date: </dt>
+                    <dd>@item.paymentDate</dd>
+                }
+            </dl>
+            <form method="post" asp-action="DeleteItem" asp-controller="DynamoDBExample" 
+                asp-route-partitionkey="@item.CustomerFullName" asp-route-sortkey="@item.CustomerTransactionID">
+                <button type="submit" class="btn-dark"> Delete</button>
+            </form>
+        </div>
+    }
+</center>
+
+
