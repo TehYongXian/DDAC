@@ -9,7 +9,7 @@
       "mvcflowershoplab1/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.201.8",
-          "AWSSDK.S3": "3.7.201.11",
+          "AWSSDK.S3": "3.7.205.3",
           "AWSSDK.SQS": "3.7.200.28",
           "AWSSDK.SimpleNotificationService": "3.7.200.27",
           "AWSSDK.XRay": "3.7.200.37",
@@ -35,17 +35,17 @@
           }
         }
       },
-      "AWSSDK.Core/3.7.202.6": {
+      "AWSSDK.Core/3.7.202.17": {
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.202.6"
+            "fileVersion": "3.7.202.17"
           }
         }
       },
       "AWSSDK.DynamoDBv2/3.7.201.8": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6"
+          "AWSSDK.Core": "3.7.202.17"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
@@ -54,20 +54,20 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.201.11": {
+      "AWSSDK.S3/3.7.205.3": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6"
+          "AWSSDK.Core": "3.7.202.17"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.201.11"
+            "fileVersion": "3.7.205.3"
           }
         }
       },
       "AWSSDK.SimpleNotificationService/3.7.200.27": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6"
+          "AWSSDK.Core": "3.7.202.17"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
@@ -78,7 +78,7 @@
       },
       "AWSSDK.SQS/3.7.200.28": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6"
+          "AWSSDK.Core": "3.7.202.17"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SQS.dll": {
@@ -89,7 +89,7 @@
       },
       "AWSSDK.XRay/3.7.200.37": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6"
+          "AWSSDK.Core": "3.7.202.17"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.XRay.dll": {
@@ -100,7 +100,7 @@
       },
       "AWSXRayRecorder.Core/2.14.0": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.202.6",
+          "AWSSDK.Core": "3.7.202.17",
           "Amazon.Lambda.SQSEvents": "2.1.0"
         },
         "runtime": {
@@ -2711,12 +2711,12 @@
       "path": "amazon.lambda.sqsevents/2.1.0",
       "hashPath": "amazon.lambda.sqsevents.2.1.0.nupkg.sha512"
     },
-    "AWSSDK.Core/3.7.202.6": {
+    "AWSSDK.Core/3.7.202.17": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wAVTXROEKHnFXAeAv0cXIth/6x6rmHeQOWW5yiI99DndE1AEw7/Qovlb0npQy7gs7s4xgbAsImL/6QYwpFQ+Bw==",
-      "path": "awssdk.core/3.7.202.6",
-      "hashPath": "awssdk.core.3.7.202.6.nupkg.sha512"
+      "sha512": "sha512-fv87rDpHNYfJP1ePxdhewreJug2xnKGWdCGSKkuL/XBSVRfmpDOTFfJP7lztPT09zxexiGfK/yz60P6prKBijQ==",
+      "path": "awssdk.core/3.7.202.17",
+      "hashPath": "awssdk.core.3.7.202.17.nupkg.sha512"
     },
     "AWSSDK.DynamoDBv2/3.7.201.8": {
       "type": "package",
@@ -2725,12 +2725,12 @@
       "path": "awssdk.dynamodbv2/3.7.201.8",
       "hashPath": "awssdk.dynamodbv2.3.7.201.8.nupkg.sha512"
     },
-    "AWSSDK.S3/3.7.201.11": {
+    "AWSSDK.S3/3.7.205.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V4op6OTIIwKuv8yXrp4H9iPk/zszLVOYnYz3eW5vdJqgF6pxxWP4Rg9Ed/tRINZIn8DAX6kCpNFdhDZRTW1Srg==",
-      "path": "awssdk.s3/3.7.201.11",
-      "hashPath": "awssdk.s3.3.7.201.11.nupkg.sha512"
+      "sha512": "sha512-7bSjjNJgPsPPPdWL3ynBb938nEU3MPcEMforfE0xvM4asK3oyt4aL1m+WWG5b6l2OKvFcyyNh9z6YiaMPcp//g==",
+      "path": "awssdk.s3/3.7.205.3",
+      "hashPath": "awssdk.s3.3.7.205.3.nupkg.sha512"
     },
     "AWSSDK.SimpleNotificationService/3.7.200.27": {
       "type": "package",
