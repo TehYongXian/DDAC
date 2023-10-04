@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mvcflowershoplab1.Data;
 
@@ -11,9 +12,11 @@ using mvcflowershoplab1.Data;
 namespace mvcflowershoplab1.Migrations
 {
     [DbContext(typeof(mvcflowershoplab1Context))]
-    partial class mvcflowershoplab1ContextModelSnapshot : ModelSnapshot
+    [Migration("20231004083157_CustomUserData")]
+    partial class CustomUserData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

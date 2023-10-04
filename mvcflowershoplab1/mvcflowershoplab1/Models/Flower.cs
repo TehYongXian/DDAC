@@ -18,6 +18,7 @@ namespace mvcflowershoplab1.Models
         [Required(ErrorMessage = "Must key in Flower Price")]
         [Display(Name = "Flower Price")]
         public decimal FlowerPrice { get; set; }
+        public string ImageKey { get; set; }
 
     }
 }

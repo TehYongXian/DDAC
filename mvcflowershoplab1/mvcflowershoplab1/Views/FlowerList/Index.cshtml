@@ -15,7 +15,8 @@
             <th>Flower Name</th>
             <th>Flower Type</th>
             <th>Flower Date</th>
-            <th>FlowerPrice</th>
+            <th>Flower Price</th>
+            <th>Image</th>
         </tr>
         @foreach (var singleflower in Model)
         {
@@ -25,6 +26,12 @@
                 <td>@singleflower.FlowerType</td>
                 <td>@singleflower.FlowerProducedDate</td>
                 <td>@singleflower.FlowerPrice</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(singleflower.ImageKey))
+                    {
+                        <img src="@singleflower.ImageKey" alt="Flower Image" width="100" height="100" />
+                    }
+                </td>
                 <td>
                     <a asp-action="deletePage" asp-controller="FlowerList" asp-route-did="@singleflower.FlowerID">
                         <button class="btn-info" style="background-color:red">Delete</button>
