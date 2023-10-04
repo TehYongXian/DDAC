@@ -29,7 +29,8 @@
                 <td>
                     @if (!string.IsNullOrEmpty(singleflower.ImageKey))
                     {
-                        <img src="@singleflower.ImageKey" alt="Flower Image" width="100" height="100" />
+                        string imageUrl = "https://" + ViewBag.BucketName + ".s3.amazonaws.com/" + singleflower.ImageKey;
+                        <img src="@imageUrl" alt="Flower Image" width="100" height="100" />
                     }
                 </td>
                 <td>

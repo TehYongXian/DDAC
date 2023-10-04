@@ -38,6 +38,7 @@ namespace mvcflowershoplab1.Controllers
         public async Task<IActionResult> Index()
         {
             List<Flower> FlowerLists = await dbname.FlowerTable.ToListAsync();
+            ViewBag.BucketName = bucketname;
             return View(FlowerLists);
         }
 
@@ -159,15 +160,13 @@ namespace mvcflowershoplab1.Controllers
                     Key = key,
                     InputStream = stream,
                     ContentType = imageFile.ContentType,
-                    CannedACL = S3CannedACL.PublicRead // Ensure everyone can view the object from a web browser
+                    CannedACL = S3CannedACL.PublicRead
                 };
 
                 var response = await agent.PutObjectAsync(request);
                 if (response.HttpStatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    // Image uploaded successfully
-                    // You can save the S3 object key (key variable) in your database
-                    // and associate it with the flower record
+                    
                     flower.ImageKey = key;
                 }
                 else
