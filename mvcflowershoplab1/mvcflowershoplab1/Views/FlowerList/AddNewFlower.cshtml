@@ -1,12 +1,15 @@
 ﻿@model Flower
+
 @{
-    ViewData["Title"] = "AddNewFlower";
+    ViewData["Title"] = "Add New Flower";
 }
 
 <center>
-    <h1>Add New Flower Information Page: </h1>
+    <h1>Add New Flower Information Page:</h1>
     <br /><hr /><br />
-    <form method="post">
+
+    <!-- Add New Flower Information Form -->
+    <form method="post" enctype="multipart/form-data">
         <table border="1">
             <tr>
                 <th><label asp-for="FlowerName"></label></th>
@@ -29,11 +32,14 @@
                 <td><span asp-validation-for="FlowerPrice"></span></td>
             </tr>
             <tr>
+                <th><label for="imagefile">Choose your image here:</label></th>
+                <td><input type="file" name="imagefile" id="imagefile" accept="image/*" /></td>
+            </tr>
+            <tr>
                 <td colspan="3" align="center">
-                    <input type="submit" name="submit" value="Add Data to table" />
+                    <input type="submit" name="submit" value="Add Data to Table and Upload Image to S3" />
                 </td>
             </tr>
         </table>
     </form>
 </center>
-
