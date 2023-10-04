@@ -6,19 +6,43 @@
 <center>
     <h1>Table Reservation Page Sample:</h1>
     <br /><hr />
-    <p>Geust waiting list in the queue: @ViewBag.count</p>
+    <p>Guest waiting list in the queue: @ViewBag.count</p>
     <br /><br />
-    <form method="post" asp-action="send2Queue" asp-controller="SQSExample">
+    <form method="post" asp-action="Reserve" asp-controller="SQSExample">
         <label> Enter your name: </label>
         <input type="text" name="name" placeholder="e.g. Ali bin Ahmad" />
         <br /><br />
-        <label> Enter your pax: </label>
-        <input type="number" name="pax" placeholder="e.g. 7" />
-        <br /><br />
-        <label> Reserve Time: </label>
-        <input type="time" name="reservetime" required/>
-        <br /><br />
-        <button type="submit" class="btn-dark">Reserve Table</button>
+        <table border="1">
+        <tr>
+            <th>Bike ID</th>
+            <th>Bike Name</th>
+            <th>Bike Type</th>
+            <th>Bike Date</th>
+            <th>Bike Price</th>
+            <th>Image</th>
+        </tr>
+        @foreach (var singlebike in Model)
+        {
+            <tr>
+                <td>@singlebike.BikeID</td>
+                <td>@singlebike.BikeName</td>
+                <td>@singlebike.BikeType</td>
+                <td>@singlebike.BikeProducedDate</td>
+                <td>@singlebike.BikePrice</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(singlebike.ImageKey))
+                    {
+                        string imageUrl = "https://" + ViewBag.BucketName + ".s3.amazonaws.com/" + singlebike.ImageKey;
+                        <img src="@imageUrl" alt="Flower Image" width="100" height="100" />
+                    }
+                </td>
+                <td>
+                        <input type="hidden" name="bikeID" value="@singlebike.BikeID" />
+                        <input type="submit" value="Reserve" class="btn btn-primary" />
+                </td>
+            </tr>
+        }
+    </table>
     </form>
 </center>
 

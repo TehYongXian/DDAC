@@ -10,7 +10,7 @@ namespace mvcflowershoplab1.Controllers
 {
     public class SNSExampleController : Controller
     {
-        private const string topicArn = "arn:aws:sns:us-east-1:971861707236:SNSExample";
+        private const string topicArn = "arn:aws:sns:us-east-1:971861707236:SNSSample";
 
         private List<string> getKeys()
         {

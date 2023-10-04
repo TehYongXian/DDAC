@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using Newtonsoft.Json;
 using mvcflowershoplab1.Models;
+using System.Xml.Linq;
+using mvcflowershoplab1.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace mvcflowershoplab1.Controllers
 {
@@ -13,7 +16,8 @@ namespace mvcflowershoplab1.Controllers
     {
 
         private const string queueName = "OrderQueueSample";
-
+        private readonly mvcflowershoplab1Context dbname;
+        private const string bucketname = "bicyclerental";
         private List<string> getKeys()
         {
             List<string> keys = new List<string>();
@@ -29,6 +33,10 @@ namespace mvcflowershoplab1.Controllers
             keys.Add(conf["Keys:Key3"]);
 
             return keys;
+        }
+        public SQSExampleController(mvcflowershoplab1Context context)
+        {
+            dbname = context;
         }
 
         //function 1: display the reserve page with number count in queue
@@ -47,24 +55,33 @@ namespace mvcflowershoplab1.Controllers
             };
             GetQueueAttributesResponse attresponse = await client.GetQueueAttributesAsync(attReq);
             ViewBag.count = attresponse.ApproximateNumberOfMessages;
-            return View();
+            List<Bike> BikeLists = await dbname.FlowerTable.ToListAsync();
+            ViewBag.BucketName = bucketname;
+            return View(BikeLists);
         }
 
         //function 2: send message to queue
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> send2Queue(string name, int pax, DateTime reservetime)
+        public async Task<IActionResult> Reserve(string bikeID, string name)
         {
-            //group the information in a single structure
-            ReserveInfo custReserve = new ReserveInfo
+            // Assuming you have retrieved the user's name and reservation time
+            string userName = name; // Replace with actual user data
+            DateTime reservationTime = DateTime.UtcNow; // Replace with actual reservation time
+
+            // Create a reservation message
+            var reservation = new
             {
                 ReserveID = Guid.NewGuid().ToString(),
-                CustomerName = name,
-                ReservePax = pax,
-                ReserveTime = reservetime
+                BikeID = bikeID,
+                UserName = userName,
+                ReservationTime = reservationTime
             };
 
-            //send the message to the queue in JSON type
+            // Serialize the reservation message to JSON
+            string reservationMessage = JsonConvert.SerializeObject(reservation);
+
+            // Send the reservation message to the SQS queue
             List<string> keys = getKeys();
             AmazonSQSClient client = new AmazonSQSClient(
                 keys[0], keys[1], keys[2], RegionEndpoint.USEast1);
@@ -74,17 +91,19 @@ namespace mvcflowershoplab1.Controllers
                 SendMessageRequest request = new SendMessageRequest
                 {
                     QueueUrl = response.QueueUrl,
-                    MessageBody = JsonConvert.SerializeObject(custReserve)
+                    MessageBody = reservationMessage
                 };
                 await client.SendMessageAsync(request);
-                ViewBag.reserveID = custReserve.ReserveID;
-                return View();
+                ViewBag.reserveID = reservation.ReserveID;
+                return View("Reserve");
             }
             catch (AmazonSQSException ex)
             {
+                // Handle any errors or exceptions, e.g., log the error or display an error message to the user.
                 return BadRequest(ex.Message);
             }
         }
+
         //function 3: Receive message from queue[Admin dashboard for controlling the order reservation
         public async Task<IActionResult> ReadMsgFromQueue()
         {

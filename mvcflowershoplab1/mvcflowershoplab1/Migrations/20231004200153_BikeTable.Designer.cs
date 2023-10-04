@@ -12,8 +12,8 @@ using mvcflowershoplab1.Data;
 namespace mvcflowershoplab1.Migrations
 {
     [DbContext(typeof(mvcflowershoplab1Context))]
-    [Migration("20230726081143_newFlowerTable")]
-    partial class newFlowerTable
+    [Migration("20231004200153_BikeTable")]
+    partial class BikeTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -239,29 +239,34 @@ namespace mvcflowershoplab1.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("mvcflowershoplab1.Models.Flower", b =>
+            modelBuilder.Entity("mvcflowershoplab1.Models.Bike", b =>
                 {
-                    b.Property<int>("FlowerID")
+                    b.Property<int>("BikeID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlowerID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BikeID"));
 
-                    b.Property<string>("FlowerName")
+                    b.Property<string>("BikeName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("FlowerPrice")
+                    b.Property<decimal>("BikePrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("FlowerProducedDate")
+                    b.Property<DateTime>("BikeProducedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FlowerType")
+                    b.Property<string>("BikeType")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("FlowerID");
+                    b.Property<string>("ImageKey")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("FLowerTable");
+                    b.HasKey("BikeID");
+
+                    b.ToTable("FlowerTable");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

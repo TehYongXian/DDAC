@@ -12,7 +12,7 @@ public class mvcflowershoplab1Context : IdentityDbContext<mvcflowershoplab1User>
     {
     }
 
-    public DbSet<mvcflowershoplab1.Models.Flower> FlowerTable { get; set; }
+    public DbSet<mvcflowershoplab1.Models.Bike> FlowerTable { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

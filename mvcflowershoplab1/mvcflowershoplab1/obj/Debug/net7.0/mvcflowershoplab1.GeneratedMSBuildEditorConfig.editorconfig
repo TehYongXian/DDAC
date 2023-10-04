@@ -56,12 +56,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/FlowerList/AddNewFlower.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2VyTGlzdFxBZGROZXdGbG93ZXIuY3NodG1s
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/AddNewBike.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcQWRkTmV3QmlrZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/FlowerList/editPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2VyTGlzdFxlZGl0UGFnZS5jc2h0bWw=
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/editPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcZWRpdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/FlowerList/Index.cshtml]
@@ -112,8 +116,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZWFkTXNnRnJvbVF1ZXVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/send2Queue.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxzZW5kMlF1ZXVlLmNzaHRtbA==
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Reserve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZXNlcnZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewImports.cshtml]
