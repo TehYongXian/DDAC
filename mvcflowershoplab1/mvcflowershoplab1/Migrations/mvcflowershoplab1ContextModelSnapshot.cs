@@ -236,32 +236,32 @@ namespace mvcflowershoplab1.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("mvcflowershoplab1.Models.Flower", b =>
+            modelBuilder.Entity("mvcflowershoplab1.Models.Bike", b =>
                 {
-                    b.Property<int>("FlowerID")
+                    b.Property<int>("BikeID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlowerID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BikeID"));
 
-                    b.Property<string>("FlowerName")
+                    b.Property<string>("BikeName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("FlowerPrice")
+                    b.Property<decimal>("BikePrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("FlowerProducedDate")
+                    b.Property<DateTime>("BikeProducedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FlowerType")
+                    b.Property<string>("BikeType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageKey")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("FlowerID");
+                    b.HasKey("BikeID");
 
                     b.ToTable("FlowerTable");
                 });

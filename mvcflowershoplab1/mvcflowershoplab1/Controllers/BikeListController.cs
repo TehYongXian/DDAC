@@ -8,7 +8,7 @@ using mvcflowershoplab1.Models;
 
 namespace mvcflowershoplab1.Controllers
 {
-    public class FlowerListController : Controller
+    public class BikeListController : Controller
     {
         //Function 1: How to connect db in single controller
         private readonly mvcflowershoplab1Context dbname;
@@ -29,7 +29,7 @@ namespace mvcflowershoplab1.Controllers
 
             return keys;
         }
-        public FlowerListController(mvcflowershoplab1Context context)
+        public BikeListController(mvcflowershoplab1Context context)
         {
             dbname = context;
         }
@@ -37,12 +37,12 @@ namespace mvcflowershoplab1.Controllers
         //view table record function
         public async Task<IActionResult> Index()
         {
-            List<Flower> FlowerLists = await dbname.FlowerTable.ToListAsync();
+            List<Bike> FlowerLists = await dbname.FlowerTable.ToListAsync();
             ViewBag.BucketName = bucketname;
             return View(FlowerLists);
         }
 
-        public IActionResult AddNewFlower()
+        public IActionResult AddNewBike()
         {
             return View();
         }
@@ -51,23 +51,23 @@ namespace mvcflowershoplab1.Controllers
         //Function 3: process the add new record action
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddNewFlower(Flower flower, IFormFile imageFile)
+        public async Task<IActionResult> AddNewBike(Bike bike, IFormFile imageFile)
         {
             if (ModelState.IsValid)
             {
                 // Upload the image to Amazon S3 and store the image key
                 if (imageFile != null)
                 {
-                    await UploadImageToS3(imageFile, flower);
+                    await UploadImageToS3(imageFile, bike);
                 }
 
                 // Save the flower record to the database
-                dbname.FlowerTable.Add(flower);
+                dbname.FlowerTable.Add(bike);
                 await dbname.SaveChangesAsync();
 
-                return RedirectToAction("Index", "FlowerList");
+                return RedirectToAction("Index", "BikeList");
             }
-            return View(flower);
+            return View(bike);
         }
 
 
@@ -79,7 +79,7 @@ namespace mvcflowershoplab1.Controllers
             {
                 return NotFound();
             }
-            Flower flower = await dbname.FlowerTable.FindAsync(did);
+            Bike flower = await dbname.FlowerTable.FindAsync(did);
 
             if(flower == null)
             {
@@ -87,7 +87,7 @@ namespace mvcflowershoplab1.Controllers
             }
             dbname.FlowerTable.Remove(flower);
             await dbname.SaveChangesAsync();
-            return RedirectToAction("Index", "FlowerList");
+            return RedirectToAction("Index", "BikeList");
         }
 
         //function 5 edit the selected result
@@ -97,7 +97,7 @@ namespace mvcflowershoplab1.Controllers
             {
                 return NotFound(); 
             }
-            Flower flower = await dbname.FlowerTable.FindAsync(did);
+            Bike flower = await dbname.FlowerTable.FindAsync(did);
             if(flower == null)
             {
                 return NotFound();
@@ -106,7 +106,7 @@ namespace mvcflowershoplab1.Controllers
         }
 
         //function 6 update information to SQL 
-        public async Task<IActionResult> updatePage(Flower flower)
+        public async Task<IActionResult> updatePage(Bike flower)
         {
             if (ModelState.IsValid)
             {
@@ -114,7 +114,7 @@ namespace mvcflowershoplab1.Controllers
                 {
                     dbname.FlowerTable.Update(flower);
                     await dbname.SaveChangesAsync();
-                    return RedirectToAction("Index", "FlowerList");
+                    return RedirectToAction("Index", "BikeList");
                 }
                 catch(Exception ex)
                 {
@@ -123,7 +123,7 @@ namespace mvcflowershoplab1.Controllers
             }
             return View("editPage", flower);
         }
-        public async Task UploadImageToS3(IFormFile imageFile, Flower flower)
+        public async Task UploadImageToS3(IFormFile imageFile, Bike flower)
         {
             try
             {

@@ -1,0 +1,41 @@
+﻿@model Bike
+@{
+    ViewData["Title"] = "editPage";
+}
+
+<center>
+    <h1>Edit Page Example: </h1>
+    <br /><hr /><br />
+    <form method="post" asp-action="updatePage" asp-controller="FlowerList">
+        <table border="1">
+            <tr>
+                <th><label asp-for="BikeID"></label></th>
+                <td><input asp-for="BikeID" readonly /></td>
+                <td><span asp-validation-for="BikeID"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="BikeName"></label></th>
+                <td><input asp-for="BikeName" /></td>
+                <td><span asp-validation-for="BikeName"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="BikeType"></label></th>
+                <td><input asp-for="BikeType" /></td>
+                <td><span asp-validation-for="BikeType"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="BikeProducedDate"></label></th>
+                <td><input asp-for="BikeProducedDate" /></td>
+                <td><span asp-validation-for="BikeProducedDate"></span></td>
+            </tr>
+            <tr>
+                <th><label asp-for="BikePrice"></label></th>
+                <td><input asp-for="BikePrice" /></td>
+                <td><span asp-validation-for="BikePrice"></span></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"><button type="submit" class="btn-info">Update</button></td>
+            </tr>
+        </table>
+    </form>
+</center>
