@@ -9,125 +9,125 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mvcflowershoplab1
 build_property.RootNamespace = mvcflowershoplab1
-build_property.ProjectDir = C:\Users\User\source\Repos\DDAC\mvcflowershoplab1\mvcflowershoplab1\
+build_property.ProjectDir = D:\APU Main\Degree\Level 3\Sem 2\DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD\assignment\mvcflowershoplab1\mvcflowershoplab1\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\source\Repos\DDAC\mvcflowershoplab1\mvcflowershoplab1
+build_property.MSBuildProjectDirectory = D:\APU Main\Degree\Level 3\Sem 2\DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD\assignment\mvcflowershoplab1\mvcflowershoplab1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/AddNewBike.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/AddNewBike.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcQWRkTmV3QmlrZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/editPage.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/editPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcZWRpdFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/Index.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/BikeList/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/FlowerList/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2VyTGlzdFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Index.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Privacy.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/Error.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/mainPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWFpblBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_LoginPartial.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/adminbroadcastmsg.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/adminbroadcastmsg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxhZG1pbmJyb2FkY2FzdG1zZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/broadcastmsg.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/broadcastmsg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxicm9hZGNhc3Rtc2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/Index.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/processSubscribe.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/processSubscribe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxwcm9jZXNzU3Vic2NyaWJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Index.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/ReadMsgFromQueue.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/ReadMsgFromQueue.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZWFkTXNnRnJvbVF1ZXVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Reserve.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Reserve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZXNlcnZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewImports.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewStart.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_Layout.cshtml]
+[D:/APU Main/Degree/Level 3/Sem 2/DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD/assignment/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3yruod72vi
