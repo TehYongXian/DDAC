@@ -12098,24 +12098,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Teh YongXian\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\APU Main\\Degree\\Level 3\\Sem 2\\DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD\\assignment\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
       "projectName": "mvcflowershoplab1",
-      "projectPath": "D:\\APU Main\\Degree\\Level 3\\Sem 2\\DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD\\assignment\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
-      "packagesPath": "C:\\Users\\Teh YongXian\\.nuget\\packages\\",
-      "outputPath": "D:\\APU Main\\Degree\\Level 3\\Sem 2\\DESIGNING AND DEVELOPING APPLICATIONS ON THE CLOUD\\assignment\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
+      "projectPath": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\mvcflowershoplab1.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\source\\Repos\\DDAC\\mvcflowershoplab1\\mvcflowershoplab1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Teh YongXian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -5,14 +5,13 @@ namespace mvcflowershoplab1.Models
     public class ReserveInfo
     {
         public string ReserveID { get; set; }
-        public string CustomerName { get; set; }
-        public int ReservePax { get; set; }
-        public DateTime ReserveTime { get; set; }
-        public int FlowerID { get; set; }
-        public string FlowerName { get; set; }
-        public string FlowerType { get; set; }
-        public DateTime FlowerProducedDate { get; set; }
-        public decimal FlowerPrice { get; set; }
+        public string UserName { get; set; }
+        public DateTime ReservationTime { get; set; }
+        public int BikeID { get; set; }
+        public string BikeName { get; set; }
+        public string BikeType { get; set; }
+        public DateTime BikeProducedDate { get; set; }
+        public decimal BikePrice { get; set; }
         public string ImageKey { get; set; }
     }
 }

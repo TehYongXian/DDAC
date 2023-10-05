@@ -37,7 +37,7 @@ namespace mvcflowershoplab1.Controllers
         //view table record function
         public async Task<IActionResult> Index()
         {
-            List<Bike> FlowerLists = await dbname.FlowerTable.ToListAsync();
+            List<Bike> FlowerLists = await dbname.BikeTable.ToListAsync();
             ViewBag.BucketName = bucketname;
             return View(FlowerLists);
         }
@@ -62,7 +62,7 @@ namespace mvcflowershoplab1.Controllers
                 }
 
                 // Save the flower record to the database
-                dbname.FlowerTable.Add(bike);
+                dbname.BikeTable.Add(bike);
                 await dbname.SaveChangesAsync();
 
                 return RedirectToAction("Index", "BikeList");
@@ -79,13 +79,13 @@ namespace mvcflowershoplab1.Controllers
             {
                 return NotFound();
             }
-            Bike flower = await dbname.FlowerTable.FindAsync(did);
+            Bike flower = await dbname.BikeTable.FindAsync(did);
 
             if(flower == null)
             {
                 return NotFound();
             }
-            dbname.FlowerTable.Remove(flower);
+            dbname.BikeTable.Remove(flower);
             await dbname.SaveChangesAsync();
             return RedirectToAction("Index", "BikeList");
         }
@@ -97,7 +97,7 @@ namespace mvcflowershoplab1.Controllers
             {
                 return NotFound(); 
             }
-            Bike flower = await dbname.FlowerTable.FindAsync(did);
+            Bike flower = await dbname.BikeTable.FindAsync(did);
             if(flower == null)
             {
                 return NotFound();
@@ -112,7 +112,7 @@ namespace mvcflowershoplab1.Controllers
             {
                 try
                 {
-                    dbname.FlowerTable.Update(flower);
+                    dbname.BikeTable.Update(flower);
                     await dbname.SaveChangesAsync();
                     return RedirectToAction("Index", "BikeList");
                 }
