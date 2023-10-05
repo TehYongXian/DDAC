@@ -4,13 +4,13 @@
 }
 
 <center>
-    <h1>Table Reservation Page Sample:</h1>
+    <h1>Bicycle Reservation Page:</h1>
     <br /><hr />
     <p>Guest waiting list in the queue: @ViewBag.count</p>
     <br /><br />
     <form method="post" asp-action="Reserve" asp-controller="SQSExample">
         <label> Enter your name: </label>
-        <input type="text" name="name" placeholder="e.g. Ali bin Ahmad" />
+        <input type="text" name="name" placeholder="e.g. Ali bin Ahmad" required />
         <br /><br />
         <table border="1">
         <tr>

@@ -3,7 +3,7 @@
     ViewData["Title"] = "ReadMsgFromQueue";
 }
 <center>
-    <h1>Admin Control Reservation Page:</h1>
+    <h1>View Reservation List:</h1>
     <br /><hr /><br />
     @if(ViewBag.errormessage != null)
     {
@@ -11,14 +11,20 @@
     }
     else
     {
-        <table>
+            <table border="1">
+                <tr>
+                    <th>Reserve ID</th>
+                    <th>Bike ID</th>
+                    <th>Customer Name</th>
+                    <th>Reserve Time</th>
+                </tr>
             @foreach(var item in Model)
             {
                 <tr>
                     <td>@item.Key.ReserveID</td>
-                    <td>@item.Key.CustomerName</td>
-                    <td>@item.Key.ReservePax</td>
-                    <td>@item.Key.ReserveTime</td>
+                    <td>@item.Key.BikeID</td>
+                    <td>@item.Key.UserName</td>
+                    <td>@item.Key.ReservationTime</td>
                     <td>
                         <form asp-action="deleteMessage" asp-controller="SQSExample" asp-route-deleteid="@item.Value" asp-route-word="accept">
                             <button type="submit" class="btn-dark">Done</button>

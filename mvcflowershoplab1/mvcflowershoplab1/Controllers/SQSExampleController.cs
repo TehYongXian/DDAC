@@ -55,7 +55,7 @@ namespace mvcflowershoplab1.Controllers
             };
             GetQueueAttributesResponse attresponse = await client.GetQueueAttributesAsync(attReq);
             ViewBag.count = attresponse.ApproximateNumberOfMessages;
-            List<Bike> BikeLists = await dbname.FlowerTable.ToListAsync();
+            List<Bike> BikeLists = await dbname.BikeTable.ToListAsync();
             ViewBag.BucketName = bucketname;
             return View(BikeLists);
         }
@@ -120,8 +120,8 @@ namespace mvcflowershoplab1.Controllers
                 {
                     QueueUrl = response.QueueUrl,
                     MaxNumberOfMessages = 10,
-                    WaitTimeSeconds = 10,
-                    VisibilityTimeout = 10
+                    WaitTimeSeconds = 20,
+                    VisibilityTimeout = 20
                 };
                 ReceiveMessageResponse response1 = await client.ReceiveMessageAsync(request);
                 if(response1.Messages.Count <= 0)

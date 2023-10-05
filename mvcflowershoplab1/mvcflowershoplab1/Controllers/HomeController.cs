@@ -10,15 +10,12 @@ namespace mvcflowershoplab1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, mvcflowershoplab1Context context)
         {
             _logger = logger;
+            dbname = context;
         }
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
 
         public IActionResult Privacy()
         {
@@ -30,7 +27,6 @@ namespace mvcflowershoplab1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
         //Function 1: How to connect db in single controller
         private readonly mvcflowershoplab1Context dbname;
         private const string bucketname = "bicyclerental";
@@ -50,17 +46,13 @@ namespace mvcflowershoplab1.Controllers
 
             return keys;
         }
-        public HomeController(mvcflowershoplab1Context context)
-        {
-            dbname = context;
-        }
 
         //view table record function
         public async Task<IActionResult> Index()
         {
-            List<Bike> FlowerLists = await dbname.FlowerTable.ToListAsync();
+            List<Bike> BikeLists = await dbname.BikeTable.ToListAsync();
             ViewBag.BucketName = bucketname;
-            return View(FlowerLists);
+            return View(BikeLists);
         }
     }
 }

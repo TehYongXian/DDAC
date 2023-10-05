@@ -263,7 +263,7 @@ namespace mvcflowershoplab1.Migrations
 
                     b.HasKey("BikeID");
 
-                    b.ToTable("FlowerTable");
+                    b.ToTable("BikeTable");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

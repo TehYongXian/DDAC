@@ -35,7 +35,7 @@ namespace mvcflowershoplab1.Controllers
         //view table record function
         public async Task<IActionResult> Index()
         {
-            List<Bike> FlowerLists = await dbname.FlowerTable.ToListAsync();
+            List<Bike> FlowerLists = await dbname.BikeTable.ToListAsync();
             ViewBag.BucketName = bucketname;
             return View(FlowerLists);
         }
