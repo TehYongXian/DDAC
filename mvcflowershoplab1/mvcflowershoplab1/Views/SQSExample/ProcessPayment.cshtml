@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Payment Page";
+}
+
+<div class="text-center">
+    <h1>Payment Page</h1>
+    <p>Please enter your payment and contact information:</p>
+
+    <form method="post" asp-action="ProcessForm" asp-controller="SQSExample">
+        <!-- Payment form fields -->
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required />
+        <br />
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required />
+        <br />
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required />
+        <br />
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+
+        <!-- Hidden field to store the reservation ID -->
+        <input type="hidden" name="reserveID" value="@ViewBag.reserveID" />
+
+        <input type="submit" value="Submit Payment" class="btn btn-primary" />
+    </form>
+</div>
