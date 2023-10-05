@@ -2,35 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using mvcflowershoplab1.Data;
 using mvcflowershoplab1.Models;
-using System.Diagnostics;
+using System;
 
 namespace mvcflowershoplab1.Controllers
 {
-    public class HomeController : Controller
+    public class mainPageController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
         //Function 1: How to connect db in single controller
         private readonly mvcflowershoplab1Context dbname;
         private const string bucketname = "bicyclerental";
@@ -50,7 +27,7 @@ namespace mvcflowershoplab1.Controllers
 
             return keys;
         }
-        public HomeController(mvcflowershoplab1Context context)
+        public mainPageController(mvcflowershoplab1Context context)
         {
             dbname = context;
         }
