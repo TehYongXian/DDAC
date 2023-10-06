@@ -8,7 +8,7 @@ using Amazon.S3;
 
 namespace mvcflowershoplab1.Controllers
 {
-    public class SNSExampleController : Controller
+    public class EmailSubscribeController : Controller
     {
         private const string topicArn = "arn:aws:sns:us-east-1:971861707236:SNSSample";
 
@@ -16,7 +16,6 @@ namespace mvcflowershoplab1.Controllers
         {
             List<string> keys = new List<string>();
 
-            //connect to the appsattings.json
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
@@ -29,13 +28,13 @@ namespace mvcflowershoplab1.Controllers
             return keys;
         }
 
-        //create the subscription page for the customer (using index function)
+        
         public IActionResult Index()
         {
             return View();
         }
 
-        //function 2: process the subscription 
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> processSubscribe(string emailadd)
@@ -62,13 +61,13 @@ namespace mvcflowershoplab1.Controllers
             }
         }
 
-        //function 3: create a broadcast dashboard for admin
+        
         public IActionResult adminbroadcastmsg()
         {
             return View();
         }
 
-        //function 4: send broadcast message
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task <IActionResult> broadcastmsg(string subject, string MsgBody)

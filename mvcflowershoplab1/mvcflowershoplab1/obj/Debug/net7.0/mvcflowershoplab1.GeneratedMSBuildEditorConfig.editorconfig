@@ -68,12 +68,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZUxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/EmailSubscribe/adminbroadcastmsg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxTdWJzY3JpYmVcYWRtaW5icm9hZGNhc3Rtc2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/EmailSubscribe/broadcastmsg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxTdWJzY3JpYmVcYnJvYWRjYXN0bXNnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/EmailSubscribe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxTdWJzY3JpYmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/EmailSubscribe/processSubscribe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxTdWJzY3JpYmVccHJvY2Vzc1N1YnNjcmliZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Reservation/ProcessPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUHJvY2Vzc1BheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Reservation/ReadMsgFromQueue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUmVhZE1zZ0Zyb21RdWV1ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Reservation/Reserve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUmVzZXJ2ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/Error.cshtml]
@@ -86,38 +118,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/adminbroadcastmsg.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxhZG1pbmJyb2FkY2FzdG1zZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/broadcastmsg.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxicm9hZGNhc3Rtc2cuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SNSExample/processSubscribe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU05TRXhhbXBsZVxwcm9jZXNzU3Vic2NyaWJlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/ProcessPayment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxQcm9jZXNzUGF5bWVudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/ReadMsgFromQueue.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZWFkTXNnRnJvbVF1ZXVlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/SQSExample/Reserve.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1FTRXhhbXBsZVxSZXNlcnZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/Repos/DDAC/mvcflowershoplab1/mvcflowershoplab1/Views/_ViewImports.cshtml]

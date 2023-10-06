@@ -26,7 +26,7 @@
                     <td>@item.Key.UserName</td>
                     <td>@item.Key.ReservationTime</td>
                     <td>
-                        <form asp-action="deleteMessage" asp-controller="SQSExample" asp-route-deleteid="@item.Value" asp-route-word="accept">
+                        <form asp-action="deleteMessage" asp-controller="Reservation" asp-route-deleteid="@item.Value" asp-route-word="accept">
                             <button type="submit" class="btn-dark">Done</button>
                             <button type="submit" class="btn-dark" asp-route-word="cancel">Cancel</button>
                         </form>

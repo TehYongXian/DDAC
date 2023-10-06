@@ -27,14 +27,14 @@ namespace mvcflowershoplab1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        //Function 1: How to connect db in single controller
+       
         private readonly mvcflowershoplab1Context dbname;
         private const string bucketname = "bicyclerental";
         private List<string> getKeys()
         {
             List<string> keys = new List<string>();
 
-            //connect to the appsattings.json
+            
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
@@ -47,7 +47,6 @@ namespace mvcflowershoplab1.Controllers
             return keys;
         }
 
-        //view table record function
         public async Task<IActionResult> Index()
         {
             List<Bike> BikeLists = await dbname.BikeTable.ToListAsync();

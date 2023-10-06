@@ -10,14 +10,12 @@ namespace mvcflowershoplab1.Controllers
 {
     public class BikeListController : Controller
     {
-        //Function 1: How to connect db in single controller
         private readonly mvcflowershoplab1Context dbname;
         private const string bucketname = "bicyclerental";
         private List<string> getKeys()
         {
             List<string> keys = new List<string>();
 
-            //connect to the appsattings.json
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
@@ -34,7 +32,6 @@ namespace mvcflowershoplab1.Controllers
             dbname = context;
         }
 
-        //view table record function
         public async Task<IActionResult> Index()
         {
             List<Bike> FlowerLists = await dbname.BikeTable.ToListAsync();
@@ -48,71 +45,63 @@ namespace mvcflowershoplab1.Controllers
         }
 
 
-        //Function 3: process the add new record action
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddNewBike(Bike bike, IFormFile imageFile)
+        public async Task<IActionResult> AddNewBike(Bike bicycle, IFormFile imageFile)
         {
             if (ModelState.IsValid)
             {
-                // Upload the image to Amazon S3 and store the image key
                 if (imageFile != null)
                 {
-                    await UploadImageToS3(imageFile, bike);
+                    await UploadImageToS3(imageFile, bicycle);
                 }
 
-                // Save the flower record to the database
-                dbname.BikeTable.Add(bike);
+ 
+                dbname.BikeTable.Add(bicycle);
                 await dbname.SaveChangesAsync();
-
                 return RedirectToAction("Index", "BikeList");
             }
-            return View(bike);
+            return View(bicycle);
         }
 
-
-
-        //funtion 4 delete the item from SQL
         public async Task<IActionResult> deletePage (int ? did)
         {
             if(did == null)
             {
                 return NotFound();
             }
-            Bike flower = await dbname.BikeTable.FindAsync(did);
+            Bike bicycle = await dbname.BikeTable.FindAsync(did);
 
-            if(flower == null)
+            if(bicycle == null)
             {
                 return NotFound();
             }
-            dbname.BikeTable.Remove(flower);
+            dbname.BikeTable.Remove(bicycle);
             await dbname.SaveChangesAsync();
             return RedirectToAction("Index", "BikeList");
         }
 
-        //function 5 edit the selected result
         public async Task<IActionResult> editPage(int? did)
         {
             if (did == null)
             {
                 return NotFound(); 
             }
-            Bike flower = await dbname.BikeTable.FindAsync(did);
-            if(flower == null)
+            Bike bicycle = await dbname.BikeTable.FindAsync(did);
+            if(bicycle == null)
             {
                 return NotFound();
             }
-            return View(flower);
+            return View(bicycle);
         }
 
-        //function 6 update information to SQL 
-        public async Task<IActionResult> updatePage(Bike flower)
+        public async Task<IActionResult> updatePage(Bike bicycle)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    dbname.BikeTable.Update(flower);
+                    dbname.BikeTable.Update(bicycle);
                     await dbname.SaveChangesAsync();
                     return RedirectToAction("Index", "BikeList");
                 }
@@ -121,9 +110,9 @@ namespace mvcflowershoplab1.Controllers
                     return BadRequest(ex.Message);
                 }
             }
-            return View("editPage", flower);
+            return View("editPage", bicycle);
         }
-        public async Task UploadImageToS3(IFormFile imageFile, Bike flower)
+        public async Task UploadImageToS3(IFormFile imageFile, Bike bicycle)
         {
             try
             {
@@ -132,24 +121,20 @@ namespace mvcflowershoplab1.Controllers
 
                 if (imageFile.Length <= 0)
                 {
-                    // Handle the case where the file is empty
                     ModelState.AddModelError(string.Empty, "File is empty, please try again.");
                     return;
                 }
                 else if (imageFile.Length > 2097152)
                 {
-                    // Handle the case where the file is too large
                     ModelState.AddModelError(string.Empty, "The file is over the 2MB size limit. Unable to upload.");
                     return;
                 }
                 else if (imageFile.ContentType.ToLower() != "image/png" && imageFile.ContentType.ToLower() != "image/jpeg")
                 {
-                    // Handle the case where the file type is not accepted
                     ModelState.AddModelError(string.Empty, "File type is not accepted. Please upload a PNG or JPEG image.");
                     return;
                 }
 
-                // Generate a unique key for the image
                 var key = "images/" + Guid.NewGuid() + "_" + imageFile.FileName;
 
                 using var stream = imageFile.OpenReadStream();
@@ -166,18 +151,16 @@ namespace mvcflowershoplab1.Controllers
                 var response = await agent.PutObjectAsync(request);
                 if (response.HttpStatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    
-                    flower.ImageKey = key;
+
+                    bicycle.ImageKey = key;
                 }
                 else
                 {
-                    // Handle the case where the image upload fails
                     ModelState.AddModelError(string.Empty, "Unable to upload the image.");
                 }
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during the S3 upload process
                 ModelState.AddModelError(string.Empty, "An error occurred: " + ex.Message);
             }
         }

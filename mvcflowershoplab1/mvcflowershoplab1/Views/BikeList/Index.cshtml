@@ -6,40 +6,40 @@
 <center>
     <h1>View Bicycle List </h1>
     <br /><hr /><br />
-    <a asp-action="AddNewBike" asp-controller="BikeList">Add New Bike</a>
+    <a asp-action="AddNewBike" asp-controller="BikeList">Add New Bicycle</a>
     <br />
     <br />
-    <table border="1">
+    <table border="1" style="padding: 5px; margin: 5px;">
         <tr>
-            <th>Bike ID</th>
-            <th>Bike Name</th>
-            <th>Bike Type</th>
-            <th>Bike Date</th>
-            <th>Bike Price</th>
-            <th>Image</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Bike ID</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Bike Name</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Bike Type</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Bike Date</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Bike Price(RM)</th>
+            <th style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">Image</th>
         </tr>
         @foreach (var singlebike in Model)
         {
             <tr>
-                <td>@singlebike.BikeID</td>
-                <td>@singlebike.BikeName</td>
-                <td>@singlebike.BikeType</td>
-                <td>@singlebike.BikeProducedDate</td>
-                <td>@singlebike.BikePrice</td>
-                <td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">@singlebike.BikeID</td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">@singlebike.BikeName</td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">@singlebike.BikeType</td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">@singlebike.BikeProducedDate</td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">@singlebike.BikePrice</td>
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px; height:110px;">
                     @if (!string.IsNullOrEmpty(singlebike.ImageKey))
                     {
                         string imageUrl = "https://" + ViewBag.BucketName + ".s3.amazonaws.com/" + singlebike.ImageKey;
                         <img src="@imageUrl" alt="Flower Image" width="100" height="100" />
                     }
                 </td>
-                <td>
-                    <a asp-action="deletePage" asp-controller="FlowerList" asp-route-did="@singlebike.BikeID">
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">
+                    <a asp-action="deletePage" asp-controller="BikeList" asp-route-did="@singlebike.BikeID">
                         <button class="btn-info" style="background-color:red">Delete</button>
                     </a>
                 </td>
-                <td>
-                    <a asp-action="editPage" asp-controller="FlowerList" asp-route-did="@singlebike.BikeID">
+                <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 30px;  padding-right: 40px;">
+                    <a asp-action="editPage" asp-controller="BikeList" asp-route-did="@singlebike.BikeID">
                         <button class="btn-info" style="background-color:limegreen">Edit</button>
                     </a>
                 </td>

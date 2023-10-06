@@ -6,12 +6,12 @@
 <center>
     <h1>Sample of newsletter subscription</h1>
     <br />
-    <a asp-action="adminbroadcastmsg" asp-controller="SNSExample">
+    <a asp-action="adminbroadcastmsg" asp-controller="EmailSubscribe">
         Admin Broadcast Message Dashboard
     </a>
     <hr /><br />
     <form method="post" asp-action="processSubscribe"
-        asp-controller="SNSExample">
+          asp-controller="EmailSubscribe">
         <label>Enter your email address for subscription: </label>
         <input type="email" name="emailadd" placeholder="aaa@gmail.com" />
         <br /><br />
