@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Rent a Bike";
+}
+
+<h2>Rent a Bike</h2>
+
+<form asp-action="ProcessRentBike">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="bikeType">Bike Type:</label>
+        <input type="text" class="form-control" id="bikeType" name="bikeType" required>
+    </div>
+    <div class="form-group">
+        <label for="rentalDate">Rental Date:</label>
+        <input type="date" class="form-control" id="rentalDate" name="rentalDate" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
