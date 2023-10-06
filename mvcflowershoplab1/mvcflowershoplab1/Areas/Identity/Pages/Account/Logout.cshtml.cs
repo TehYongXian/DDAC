@@ -15,10 +15,10 @@ namespace mvcflowershoplab1.Areas.Identity.Pages.Account
 {
     public class LogoutModel : PageModel
     {
-        private readonly SignInManager<mvcflowershoplab1User> _signInManager;
+        private readonly SignInManager<mvcbicyclerentalUser> _signInManager;
         private readonly ILogger<LogoutModel> _logger;
 
-        public LogoutModel(SignInManager<mvcflowershoplab1User> signInManager, ILogger<LogoutModel> logger)
+        public LogoutModel(SignInManager<mvcbicyclerentalUser> signInManager, ILogger<LogoutModel> logger)
         {
             _signInManager = signInManager;
             _logger = logger;

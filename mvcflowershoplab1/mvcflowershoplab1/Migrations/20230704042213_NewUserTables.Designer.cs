@@ -11,7 +11,7 @@ using mvcflowershoplab1.Data;
 
 namespace mvcflowershoplab1.Migrations
 {
-    [DbContext(typeof(mvcflowershoplab1Context))]
+    [DbContext(typeof(mvcbicyclerentalContext))]
     [Migration("20230704042213_NewUserTables")]
     partial class NewUserTables
     {

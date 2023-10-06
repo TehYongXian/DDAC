@@ -1,4 +1,4 @@
-﻿@inject SignInManager<mvcflowershoplab1User> SignInManager
+﻿@inject SignInManager<mvcbicyclerentalUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }

@@ -10,7 +10,7 @@ namespace mvcflowershoplab1.Controllers
 {
     public class BikeListController : Controller
     {
-        private readonly mvcflowershoplab1Context dbname;
+        private readonly mvcbicyclerentalContext dbname;
         private const string bucketname = "bicyclerental";
         private List<string> getKeys()
         {
@@ -27,7 +27,7 @@ namespace mvcflowershoplab1.Controllers
 
             return keys;
         }
-        public BikeListController(mvcflowershoplab1Context context)
+        public BikeListController(mvcbicyclerentalContext context)
         {
             dbname = context;
         }

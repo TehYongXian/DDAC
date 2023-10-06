@@ -18,7 +18,7 @@ namespace mvcflowershoplab1.Controllers
     {
         private const string topicArn = "arn:aws:sns:us-east-1:971861707236:SNSSample";
         private const string queueName = "OrderQueueSample";
-        private readonly mvcflowershoplab1Context dbname;
+        private readonly mvcbicyclerentalContext dbname;
         private const string bucketname = "bicyclerental";
         private List<string> getKeys()
         {
@@ -36,7 +36,7 @@ namespace mvcflowershoplab1.Controllers
 
             return keys;
         }
-        public ReservationController(mvcflowershoplab1Context context)
+        public ReservationController(mvcbicyclerentalContext context)
         {
             dbname = context;
         }

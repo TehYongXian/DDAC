@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 namespace mvcflowershoplab1.Areas.Identity.Data;
 
 // Add profile data for application users by adding properties to the mvcflowershoplab1User class
-public class mvcflowershoplab1User : IdentityUser
+public class mvcbicyclerentalUser : IdentityUser
 {
     //add
     [PersonalData]

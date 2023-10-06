@@ -10,7 +10,7 @@ using mvcflowershoplab1.Data;
 
 namespace mvcflowershoplab1.Migrations
 {
-    [DbContext(typeof(mvcflowershoplab1Context))]
+    [DbContext(typeof(mvcbicyclerentalContext))]
     partial class mvcflowershoplab1ContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -24,17 +24,17 @@ namespace mvcflowershoplab1.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<mvcflowershoplab1User> _signInManager;
-        private readonly UserManager<mvcflowershoplab1User> _userManager;
-        private readonly IUserStore<mvcflowershoplab1User> _userStore;
-        private readonly IUserEmailStore<mvcflowershoplab1User> _emailStore;
+        private readonly SignInManager<mvcbicyclerentalUser> _signInManager;
+        private readonly UserManager<mvcbicyclerentalUser> _userManager;
+        private readonly IUserStore<mvcbicyclerentalUser> _userStore;
+        private readonly IUserEmailStore<mvcbicyclerentalUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<mvcflowershoplab1User> userManager,
-            IUserStore<mvcflowershoplab1User> userStore,
-            SignInManager<mvcflowershoplab1User> signInManager,
+            UserManager<mvcbicyclerentalUser> userManager,
+            IUserStore<mvcbicyclerentalUser> userStore,
+            SignInManager<mvcbicyclerentalUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -179,27 +179,27 @@ namespace mvcflowershoplab1.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private mvcflowershoplab1User CreateUser()
+        private mvcbicyclerentalUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<mvcflowershoplab1User>();
+                return Activator.CreateInstance<mvcbicyclerentalUser>();
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(mvcflowershoplab1User)}'. " +
-                    $"Ensure that '{nameof(mvcflowershoplab1User)}' is not an abstract class and has a parameterless constructor, or alternatively " +
+                throw new InvalidOperationException($"Can't create an instance of '{nameof(mvcbicyclerentalUser)}'. " +
+                    $"Ensure that '{nameof(mvcbicyclerentalUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
-        private IUserEmailStore<mvcflowershoplab1User> GetEmailStore()
+        private IUserEmailStore<mvcbicyclerentalUser> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<mvcflowershoplab1User>)_userStore;
+            return (IUserEmailStore<mvcbicyclerentalUser>)_userStore;
         }
     }
 }

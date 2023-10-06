@@ -1,8 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using mvcflowershoplab1.Areas.Identity.Data
 
-@inject SignInManager<mvcflowershoplab1User> SignInManager
-@inject UserManager<mvcflowershoplab1User> UserManager
+@inject SignInManager<mvcbicyclerentalUser> SignInManager
+@inject UserManager<mvcbicyclerentalUser> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))

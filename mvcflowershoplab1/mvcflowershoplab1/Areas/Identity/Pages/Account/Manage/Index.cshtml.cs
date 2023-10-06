@@ -15,12 +15,12 @@ namespace mvcflowershoplab1.Areas.Identity.Pages.Account.Manage
 {
     public class IndexModel : PageModel
     {
-        private readonly UserManager<mvcflowershoplab1User> _userManager;
-        private readonly SignInManager<mvcflowershoplab1User> _signInManager;
+        private readonly UserManager<mvcbicyclerentalUser> _userManager;
+        private readonly SignInManager<mvcbicyclerentalUser> _signInManager;
 
         public IndexModel(
-            UserManager<mvcflowershoplab1User> userManager,
-            SignInManager<mvcflowershoplab1User> signInManager)
+            UserManager<mvcbicyclerentalUser> userManager,
+            SignInManager<mvcbicyclerentalUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -78,7 +78,7 @@ namespace mvcflowershoplab1.Areas.Identity.Pages.Account.Manage
             public string CAddress { get; set; }
         }
 
-        private async Task LoadAsync(mvcflowershoplab1User user)
+        private async Task LoadAsync(mvcbicyclerentalUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);

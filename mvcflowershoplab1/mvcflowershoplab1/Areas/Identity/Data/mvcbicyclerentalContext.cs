@@ -5,9 +5,9 @@ using mvcflowershoplab1.Areas.Identity.Data;
 
 namespace mvcflowershoplab1.Data;
 
-public class mvcflowershoplab1Context : IdentityDbContext<mvcflowershoplab1User>
+public class mvcbicyclerentalContext : IdentityDbContext<mvcbicyclerentalUser>
 {
-    public mvcflowershoplab1Context(DbContextOptions<mvcflowershoplab1Context> options)
+    public mvcbicyclerentalContext(DbContextOptions<mvcbicyclerentalContext> options)
         : base(options)
     {
     }

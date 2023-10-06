@@ -7,14 +7,14 @@ using Amazon.XRay.Recorder.Handlers.AwsSdk;
 using Amazon.XRay.Recorder.Handlers.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("mvcflowershoplab1ContextConnection") ?? throw new InvalidOperationException("Connection string 'mvcflowershoplab1ContextConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("mvcbicyclerentalContextConnection") ?? throw new InvalidOperationException("Connection string 'mvcbicyclerentalContextConnection' not found.");
 
 //allow xray to monitor all the backend service
 AWSSDKHandler.RegisterXRayForAllServices();
 
-builder.Services.AddDbContext<mvcflowershoplab1Context>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<mvcbicyclerentalContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<mvcflowershoplab1User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<mvcflowershoplab1Context>();
+builder.Services.AddDefaultIdentity<mvcbicyclerentalUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<mvcbicyclerentalContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
